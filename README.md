@@ -15,6 +15,7 @@ These configurations can weaken session security and increase exposure to risks 
 
 Administrative navigation elements were visible in the page's DOM before authentication.
 Although the actual protected content remained inaccessible, this exposed some information about the application's internal interface.
+
 I'll admit — after SQL injection attempts, brute force testing, Nmap scanning (which got refused at the TCP/SSL handshake), and Metasploit modules all came up empty, I genuinely thought this application might be airtight. Then a manual look at cookies in Burp Suite told a different story — a reminder that automated tools don't catch everything, and manual inspection still matters.
 
 What I learned from this assessment:
